@@ -21,7 +21,6 @@ public class LoginPage {
     private final By passwordField = By.cssSelector("input#password");
     private final By loginButton = By.cssSelector("button.radius");
     private final By validationMessage = By.xpath("//*[@id='flash']");
-    private final By pageTitle = By.cssSelector("div.example > h2");
 
 
     public void insertUsername(String username){
@@ -47,10 +46,5 @@ public class LoginPage {
     public String getValidationMessage(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(validationMessage));
         return driver.findElement(validationMessage).getText();
-    }
-
-    public String getPageTitle(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(pageTitle));
-        return driver.findElement(pageTitle).getText();
     }
 }

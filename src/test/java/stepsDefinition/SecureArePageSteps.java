@@ -4,12 +4,6 @@ import hooks.Hooks;
 import org.openqa.selenium.WebDriver;
 import pages.SecureAreaPage;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import pages.SecureAreaPage;
-
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class SecureArePageSteps {

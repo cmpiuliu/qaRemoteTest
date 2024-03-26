@@ -46,12 +46,11 @@ public class LoginPageSteps {
     public void theAppropriateErrorMessageIsDisplayed(String expectedValidation) {
         assertTrue(loginPage.getValidationMessage().contains(expectedValidation));
 
-        System.out.println(loginPage.getValidationMessage());
     }
 
     @Then("User is successfully logged in to the landing page")
     public void userIsSuccessfullyLoggedInToTheLandingPage() {
-        assertEquals("https://the-internet.herokuapp.com/secure",driver.getCurrentUrl());
+        assertEquals("https://the-internet.herokuapp.com/secure", driver.getCurrentUrl());
 
     }
 
@@ -63,7 +62,7 @@ public class LoginPageSteps {
 
     @Then("User is successfully logged out")
     public void userIsSuccessfullyLoggedOut() {
-        assertEquals("https://the-internet.herokuapp.com/login",driver.getCurrentUrl());
+        assertEquals("https://the-internet.herokuapp.com/login", driver.getCurrentUrl());
 
     }
 }
